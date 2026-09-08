@@ -1,51 +1,54 @@
-P4_001_2025 FIRST LEGO League Asia Open Championship The Third Place
-P4_002_First Lego league 香港錦標賽 2024-2025 overall second runner-up
-P4_003_First Lego league 香港錦標賽 2024-2025 Team model award
-P4_004_2024-2025全港校際 STEAM 資優盃資訊科技 總決賽學霸第一名
-P4_005_2024-2025全港校際 STEAM 資優盃資訊科技 初賽 金獎
-P4_006_WSC certificate of competition Asia Pacific challenge silver award
-P4_007_Innovation and technology excellence with marty the robot AT BETT 2025
-P4_008_大埔公立學校2024至2025學年度代表香港到境外交流獎學金
-P4_009_Best presentation award at the second global Marty challenge
-P4_010_Robofest Hong Kong RoboParade Junior 2025 Gold Award
-P4_011_Robofest Hong Kong BottleSumo 2025 Junior Gold Award
-P4_012_大埔舊墟公立學校2024至2025學年度科學科技獎勵計劃獎學金
-P4_013_香港電腦教育學會 資訊科技挑戰獎勵計劃 銀章級
-P4_014_AI Assisted Film Virtual Production
-P4_015_NOW TV STEM AWARDS Silver
-P4_016_香港機械人學院 2024-2025學年度下學期機 械人精英培訓課程 表現優良
-P4_017_小學聯合校steam比賽2025 參加證明
-P4_018_迦密柏雨中學 舉辦之科學達人大挑戰 2024 參與證明
-P4_019_Global Classroom class of 2025 certificate of participation
-P4_020_2024至2025學年參加Sport ACT獎勵計劃並獲金獎
-P4_021_中國香港學界體育聯會2024-2025年度大埔區小學校際籃球比賽季軍
-P4_022_第九屆協恩中學聯合小學籃球邀請賽參與證書
-P4_023_國學證書參加武藝操學習
-P4_024_「躍動校園活力人生」邁步巴黎奧運挑戰賽暨MVPA60金章
-P4_025_林大輝中學全港小學籃球邀請賽參與證書
-P4_026_AI Singer Elderly and Youth Together Unleashed Potentials
-P4_027_香港光雕節 參與證書
-P4_028_第一屆非遺旗袍設計比賽入圍獎
-P4_029_青少年兒童當代繪畫大賽2025 金獎
-P4_030_香港拔萃兒童文化藝術協會certificate of achievement
-P4_031_大埔舊墟公立學校「愛的創意校園」視覺創科成果展AI虛擬歌手獎
-P4_032_大埔舊墟公立學校 2024至2025學年度傑出藝術成就獎
-P4_033_大埔舊墟公立學校「愛的創意校園視藝創科成果展」優秀作品獎
-P4_034_大埔舊墟公立學校大埔舊墟公立學校家長教師會2024至2025學年親子環保生活用品設計比賽高小組銀獎
-P4_035_第13屆世界兒童繪畫大獎賽2024優秀獎
-P4_036_大埔警區 防騙許願寶牒設計比賽 高小組 亞軍
-P4_037_Hong Kong School Elite Competition 2025 English group P4 Bronze award
-P4_038_Hong Kong Schools Music and Speech Association 76th Hong Kong School Speech Festival 2024 Solo Verse Speaking Non-Open primary 4 Girls Second Place
-P4_039_SPC少兒普通話水平測試等級證書A等
-P4_040_香港學校音樂及朗誦協會 第76屆 香港學校朗誦戰2024 散文獨誦粵語四年級女子組 季軍
-P4_041_第22屆全港小學英文文國組合歌唱比賽榮獲分組優異獎
-P4_042_第22屆英文民歌歌唱比賽初賽 舊墟之聲 小學組 分組冠軍
-P4_043_第22屆英文民歌歌唱比賽決賽 舊墟之聲 小學組 最佳動作演繹獎、優異獎、全場殿軍
-P4_044_教育局公益少年團大埔委員會小學中級獎章證書
-P4_045_大埔警區大埔區提子大使委任狀
-P4_046_大埔警區提子大使2024至2025年度感謝狀
-P4_047_大埔區學生獎勵計劃2024至2025表現優異
-P4_048_大埔舊墟公立學校2024至2025學年度 學業成績榮譽獎
-P4_049_大埔舊墟公立學校2024至2025學年度 擔任風紀表現優異記優點一次
-P4_050_大埔舊墟公立學校2024至2025學年度 閱讀獎勵計劃銅獎
-P4_051_舊墟學校好孩子獎勵計劃完成本獎勵計劃優異四星章
+2025 FIRST LEGO League Asia Open Championship The Third Place
+First Lego league 香港錦標賽 2024-2025 Overall 2nd runner-up
+First Lego league 香港錦標賽 2024-2025 Team Model Award
+2024-2025全港校際 STEAM 資優盃資訊科技 總決賽學霸第一名
+2024-2025全港校際 STEAM 資優盃資訊科技 初賽 金獎
+Universal Robotics Challenge 機械人競技比賽 高小組 一等獎
+小學聯校STEAM比賽 6足機械人 一等獎
+WSC asia pacific challenge Silver Award
+大埔舊墟公立學校2024-2025學年度 代表香港到境外交流獎學金
+Prister Innovation and technology excellence with Marty the robot at BETT 2025
+Prister Best presentation award at the second global Marty challenge
+Robofest Hong Kong RoboParade Junior 2025 Gold Award
+Robofest Hong Kong BottleSumo 2025 Junior Gold Award
+大埔舊墟公立學校2024-2025學年度 科學科技獎勵計劃獎學金
+香港電腦教育學會 資訊科技挑戰獎勵計劃 銀章級
+AI Assisted Film Virtual Production
+NOW TV STEM AWARDS Silver
+香港機械人學院 2024-2025學年度下學期 機械人精英培訓課程 表現優良
+迦密柏雨中學 舉辦之科學達人大挑戰 2024 參與證明
+Prister Global Classroom class of 2025 certificate of participation
+香港青年創藝協會 青少年兒童當代繪畫大賽2025 金獎
+香港拔萃兒童文化藝術協會 2nd Hong Kong Outstanding Children Art Hand-Crafting Contest 2024 金獎
+大埔警區 防騙許願寶牒設計比賽 高小組 亞軍
+大埔舊墟公立學校 2024-2025學年度 傑出藝術成就獎
+大埔舊墟公立學校 家長教師會2024-2025學年度 親子環保生活用品設計比賽 高小組 銀獎
+大埔舊墟公立學校「愛的創意校園視藝創科成果展」優秀作品獎
+大埔舊墟公立學校 傅承非遺布偶獎
+大埔舊墟公立學校「愛的創意校園」視覺創科成果展 AI虛擬歌手獎
+世界兒童藝術文化協會 第13屆世界兒童繪畫大獎賽2024 優秀獎
+香港理工大學 第一屆非遺旗袍設計比賽 入圍獎
+資訊科技體育基金 AI Singer Certificate of Completion
+香港光雕節 參與證書
+第22屆英文民歌歌唱比賽 初賽 舊墟之聲 小學組 分組冠軍
+第22屆英文民歌歌唱比賽 決賽 舊墟之聲 小學組 最佳動作演繹獎、優異獎、全場殿軍
+第22屆全港小學英文民歌 組合歌唱比賽 分組優異獎
+中國香港學界體育聯會2024-2025年度大埔區小學校際籃球比賽 季軍
+中華聖潔會靈風中學 大埔區小學籃球比賽 女子組亞軍
+2024-2025學年 Sport ACT獎勵計劃 金獎
+「躍動校園活力人生」邁步巴黎奧運挑戰賽暨MVPA60 金章
+第九屆協恩中學聯合小學籃球邀請賽 參與證書
+林大輝中學全港小學籃球邀請賽 參與證書
+五學並舉之武藝校園計劃 國學證書
+Hong Kong School Elite Competition 2025 English group P4 Bronze Award
+SPC少兒普通話水平測試 中級A等證書
+Hong Kong Schools Music and Speech Association 76th Hong Kong School Speech Festival 2024 Solo Verse Speaking Non-Open primary 4 Girls Second Place
+香港學校音樂及朗誦協會 第76屆 香港學校朗誦節2024 散文獨誦粵語四年級女子組 季軍
+教育局 公益少年團大埔區委員會 小學中級獎章證書
+大埔警區大埔區提子大使 委任狀
+大埔警區提子大使2024-2025年度 感謝狀
+大埔區學生獎勵計劃2024-2025 表現優異
+大埔舊墟公立學校2024-2025學年度 學業成績榮譽獎
+大埔舊墟公立學校2024-2025學年度 擔任風紀表現優異記優點一次
+大埔舊墟公立學校2024-2025學年度 閱讀獎勵計劃 銅獎
+舊墟學校好孩子獎勵計劃完成本獎勵計劃 優異四星章
