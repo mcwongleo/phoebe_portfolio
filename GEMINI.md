@@ -11,9 +11,8 @@
 ```
 /home/leowong/project/phoebe_profile/
 ├── GEMINI.md                            # 本專案的系統維護與對照指引（本檔案）
+├── index.html                           # 網頁版/列印版 10頁 A4 個人履歷檔案（可 Ctrl+P 儲存為 PDF）
 ├── flat_portfolio/                      # 自動產生的扁平化檔案目錄（一鍵全選上傳用）
-├── portfolio/                           # 存放網頁版個人履歷檔案的資料夾
-│   └── portfolio.html                   # 網頁版/列印版 10頁 A4 個人履歷檔案（可 Ctrl+P 儲存為 PDF）
 ├── scripts/                             # 存放所有指令指令碼的資料夾
 │   └── flatten_portfolio.py             # 履歷與附件扁平化複製工具（上傳 Gemini Notebook 專用）
 └── 履歷表 6A31黃熹澄/                    # 核心資料夾
