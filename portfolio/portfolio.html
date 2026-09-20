@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>黃熹澄 (Phoebe Wong) - 中一自行收生學習履歷檔案</title>
+    <style>
+        /* CSS Print Layout Rules */
+        @page {
+            size: A4 portrait;
+            margin: 0;
+        }
+        @media print {
+            body {
+                background: none;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .page {
+                page-break-after: always;
+                page-break-inside: avoid;
+                box-shadow: none !important;
+                margin: 0 !important;
+            }
+        }
+
+        /* Screen & General Rules */
+        * {
+            box-sizing: border-box;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+        body {
+            font-family: 'PingFang HK', 'Heiti TC', 'Microsoft JhengHei', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #2c3e50;
+        }
+
+        /* Page Container (True A4 dimensions) */
+        .page {
+            width: 210mm;
+            height: 297mm;
+            background: white;
+            margin: 20px auto;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            position: relative;
+            overflow: hidden;
+            padding: 20mm 15mm 15mm 15mm;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Palette Constants */
+        :root {
+            --primary: #003366;  /* Deep Navy */
+            --secondary: #008080; /* Teal */
+            --accent: #b8860b;    /* Dark Goldenrod */
+            --light-bg: #f8f9fa;
+            --border-color: #e9ecef;
+        }
+
+        /* Structural Page Elements */
+        .header-accent {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8mm;
+            background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+        }
+        .footer-accent {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 6mm;
+            background: var(--primary);
+        }
+        .page-footer-text {
+            position: absolute;
+            bottom: 8mm;
+            left: 15mm;
+            right: 15mm;
+            display: flex;
+            justify-content: space-between;
+            font-size: 9pt;
+            color: #7f8c8d;
+            border-top: 1px solid var(--border-color);
+            padding-top: 2mm;
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            margin: 0;
+            color: var(--primary);
+        }
+        h2.section-title {
+            font-size: 18pt;
+            border-left: 5px solid var(--secondary);
+            padding-left: 3mm;
+            margin-bottom: 5mm;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        h2.section-title span.en {
+            font-size: 11pt;
+            color: #7f8c8d;
+            font-weight: normal;
+        }
+        p {
+            margin: 0 0 3mm 0;
+            line-height: 1.5;
+            font-size: 10.5pt;
+        }
+
+        /* Reusable UI Components */
+        .badge {
+            background-color: var(--secondary);
+            color: white;
+            padding: 1mm 3mm;
+            border-radius: 3px;
+            font-size: 9pt;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .badge-gold {
+            background-color: var(--accent);
+        }
+
+        /* Tables styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 4mm;
+            font-size: 9.5pt;
+        }
+        th, td {
+            border: 1px solid #dee2e6;
+            padding: 2.2mm;
+            text-align: left;
+        }
+        th {
+            background-color: #f1f3f5;
+            color: var(--primary);
+            font-weight: bold;
+        }
+        tr.highlight {
+            background-color: #fdfaf2;
+        }
+
+        /* Achievements Layout */
+        .achievement-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4mm;
+            margin-bottom: 4mm;
+        }
+        .achievement-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 5px;
+            padding: 3.5mm;
+            background: #ffffff;
+            border-top: 3px solid var(--secondary);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .achievement-card h3 {
+            font-size: 11pt;
+            margin-bottom: 1.5mm;
+            color: var(--primary);
+        }
+        .achievement-card p {
+            font-size: 9pt;
+            color: #4a5568;
+            margin-bottom: 2mm;
+            flex-grow: 1;
+        }
+        .achievement-card .code {
+            font-size: 8.5pt;
+            font-weight: bold;
+            color: var(--accent);
+            text-align: right;
+        }
+
+        /* Cover Page styling */
+        .cover-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10mm 5mm;
+            text-align: center;
+        }
+        .cover-header {
+            width: 100%;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 5mm;
+            margin-top: 10mm;
+        }
+        .cover-header h3 {
+            font-size: 15pt;
+            letter-spacing: 2px;
+            color: var(--secondary);
+            margin-bottom: 2mm;
+        }
+        .cover-header h1 {
+            font-size: 32pt;
+            font-weight: 800;
+            letter-spacing: 3px;
+            color: var(--primary);
+        }
+        .cover-photo-placeholder {
+            width: 50mm;
+            height: 70mm;
+            border: 3px solid var(--primary);
+            border-radius: 8px;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: #95a5a6;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin: 10mm 0;
+            position: relative;
+        }
+        .cover-photo-placeholder::before {
+            content: "貼上個人彩色相片\n(Student Photo)";
+            white-space: pre-line;
+            text-align: center;
+            font-size: 11pt;
+        }
+        .cover-student-details {
+            width: 80%;
+            background: #fafafa;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 6mm;
+            margin-bottom: 10mm;
+        }
+        .cover-student-details table {
+            margin: 0;
+        }
+        .cover-student-details td {
+            border: none;
+            padding: 2.5mm;
+            font-size: 11pt;
+        }
+        .cover-student-details td.label {
+            font-weight: bold;
+            color: var(--primary);
+            text-align: right;
+            width: 40%;
+        }
+        .cover-student-details td.val {
+            text-align: left;
+            width: 60%;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .cover-footer {
+            font-size: 12pt;
+            font-weight: bold;
+            color: var(--secondary);
+            margin-bottom: 5mm;
+        }
+
+        /* Two columns text formatting */
+        .two-col-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6mm;
+            flex: 1;
+        }
+        .col-box {
+            background-color: #fcfcfc;
+            border: 1px solid #edf2f7;
+            border-radius: 5px;
+            padding: 4mm;
+            font-size: 10pt;
+        }
+        .col-box h3 {
+            font-size: 12pt;
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 1.5mm;
+            margin-bottom: 3mm;
+        }
+
+        /* Info boxes */
+        .info-strip {
+            background: linear-gradient(135deg, #003366 0%, #00509d 100%);
+            color: white;
+            padding: 4mm;
+            border-radius: 5px;
+            margin-bottom: 4mm;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .info-strip-item h4 {
+            margin: 0;
+            font-size: 12pt;
+            color: #ffcc00;
+        }
+        .info-strip-item p {
+            margin: 1mm 0 0 0;
+            font-size: 9.5pt;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ================= PAGE 1: COVER ================= -->
+    <div class="page">
+        <div class="header-accent"></div>
+        <div class="cover-container">
+            <div class="cover-header">
+                <h3>大埔舊墟公立學校 — 六年級</h3>
+                <h1>中一自行收生入學申請個人檔案</h1>
+                <h3 style="color:var(--accent); font-size:16pt; margin-top:2mm; font-weight:bold;">STUDENT PORTFOLIO</h3>
+            </div>
+            
+            <div class="cover-photo-placeholder"></div>
+
+            <div class="cover-student-details">
+                <table>
+                    <tr>
+                        <td class="label">學生姓名 (Name)：</td>
+                        <td class="val" style="font-weight:bold; font-size:13pt;">黃熹澄 (Wong Hei Ching, Phoebe)</td>
+                    </tr>
+                    <tr>
+                        <td class="label">就讀小學 (School)：</td>
+                        <td class="val">大埔舊墟公立學校</td>
+                    </tr>
+                    <tr>
+                        <td class="label">班別及座號 (Class)：</td>
+                        <td class="val">6A 班 (31 號)</td>
+                    </tr>
+                    <tr>
+                        <td class="label">學生編號 (STRN)：</td>
+                        <td class="val">S121112</td>
+                    </tr>
+                    <tr>
+                        <td class="label">個人興趣 (Interests)：</td>
+                        <td class="val">繪畫、STEAM、唱歌、打籃球</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="cover-footer">
+                2026/2027 年度 升中自行分配學位
+            </div>
+        </div>
+        <div class="page-footer-text">
+            <span>黃熹澄 個人學習履歷檔案</span>
+            <span>第 1 頁 / 共 10 頁</span>
+        </div>
+        <div class="footer-accent"></div>
+    </div>
+
+
+    <!-- ================= PAGE 2: PERSONAL STATEMENT ================= -->
+    <div class="page">
+        <div class="header-accent"></div>
+        <h2 class="section-title">個人簡介與自薦信 <span class="en">Personal Statement & Student Profile</span></h2>
+        
+        <div class="info-strip">
+            <div class="info-strip-item">
+                <h4>卓越學業</h4>
+                <p>全學年學業榮譽獎</p>
+            </div>
+            <div class="info-strip-item" style="border-left: 1px solid rgba(255,255,255,0.2); border-right: 1px solid rgba(255,255,255,0.2); padding: 0 5mm;">
+                <h4>國際創科</h4>
+                <p>FLL亞洲公開賽季軍</p>
+            </div>
+            <div class="info-strip-item">
+                <h4>全能領袖</h4>
+                <p>傑出風紀 & 提子大使</p>
+            </div>
+        </div>
+
+        <div class="two-col-container">
+            <div class="col-box">
+                <h3 style="color:var(--primary);">自薦信 (中文版)</h3>
+                <p style="text-indent: 8mm; text-align: justify; font-size: 9.5pt;">
+                    您好！我是大埔舊墟公立學校六年級的黃熹澄。我是一名熱愛科技、藝術、音樂與體育的多元發展學生。在小學階段，我始終保持著對知識的渴望，學業成績名列前茅，並多次榮獲「學業成績榮譽獎」與「科學科技獎勵計劃獎學金」。
+                </p>
+                <p style="text-indent: 8mm; text-align: justify; font-size: 9.5pt;">
+                    在科技領域，我代表學校赴境外參加國際比賽，獲得「FIRST LEGO League 亞洲公開賽」季軍。這段經歷極大地開拓了我的國際視野，並培養了我極強的團隊協作能力。除機械人外，我對視覺藝術也懷有濃厚熱情，曾獲得「傑出藝術成就獎」和「AI設計大師獎」，這使我學會以創意思維去審視科技難題。
+                </p>
+                <p style="text-indent: 8mm; text-align: justify; font-size: 9.5pt;">
+                    作為學校的「傑出風紀」與大埔警區的「傑出提子大使」，我積極服務學校和社區。我非常渴望加入貴校，並在優良的學術氛圍下，繼續追求卓越，貢獻所長。
+                </p>
+            </div>
+            
+            <div class="col-box">
+                <h3 style="color:var(--secondary);">Self-Statement (English)</h3>
+                <p style="text-align: justify; font-size: 9pt; line-height: 1.4;">
+                    As a curious and driven Grade 6 student, I thrive at the intersection of technology, creative arts, and leadership. My educational journey is defined by a passion for STEAM, where I constantly seek to bridge scientific innovation with artistic expression.
+                </p>
+                <p style="text-align: justify; font-size: 9pt; line-height: 1.4;">
+                    Academically, I maintain a record of excellence, consistently ranking at the top of my grade and receiving consecutive Academic Honour Awards. In robotics, representing Hong Kong at the 2025 FIRST LEGO League Asia Open Championship and securing Third Place ignited my global perspective on collaborative problem-solving.
+                </p>
+                <p style="text-align: justify; font-size: 9pt; line-height: 1.4;">
+                    Beyond robotics, my passion for design has earned me the Outstanding Art Achievement Award and the AI Design Master Award. I believe visual arts and music—demonstrated by my accomplishments as a first runner-up in the HK English Folk Song Contest—harmonize with my analytical mind. As an Outstanding Prefect, I am eager to bring my diverse experience to your esteemed secondary school.
+                </p>
+            </div>
+        </div>
+
+        <div class="page-footer-text">
+            <span>黃熹澄 個人學習履歷檔案</span>
+            <span>第 2 頁 / 共 10 頁</span>
+        </div>
+        <div class="footer-accent"></div>
+    </div>
+
+
+    <!-- ================= PAGE 3: ACADEMIC PERFORMANCE ================= -->
+    <div class="page">
+        <div class="header-accent"></div>
+        <h2 class="section-title">學業成績表現 <span class="en">Academic Performance & Honours</span></h2>
+        
+        <p style="font-size: 10pt; margin-bottom: 3mm;">
+            在校期間，我保持着積極向上的學習態度。以下是我在四年級和五年級各個學段的中、英、數、常四科成績、校內名次及所獲學術榮譽的匯總：
+        </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th style="width:12%;">年級</th>
+                    <th style="width:15%;">學段</th>
+                    <th style="width:38%;">學科評估成績 (分數)</th>
+                    <th style="width:35%;">校內名次與榮譽獎項</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="highlight">
+                    <td rowspan="3" style="font-weight:bold; text-align:center; background:#f9f9f9;">五年級<br>(P5)</td>
+                    <td>第一學段</td>
+                    <td>中文 (91.4) | 英文 (91.4) | 數學 (92.0) | 常識 (98.0)</td>
+                    <td>全級第 11 名 / 全班第 7 名<br><span class="badge">學習態度獎</span> <span class="badge">學業成績一等獎</span></td>
+                </tr>
+                <tr class="highlight">
+                    <td>第二學段</td>
+                    <td>中文 (94.6) | 英文 (92.7) | 數學 (86.0) | 常識 (98.0)</td>
+                    <td>全級第 22 名 / 全班第 10 名<br><span class="badge">學業成績一等獎</span></td>
+                </tr>
+                <tr class="highlight">
+                    <td>第三學段</td>
+                    <td>中文 (94.8) | 英文 (92.3) | 數學 (96.0) | 常識 (99.0)</td>
+                    <td>全級第 12 名 / 全班第 5 名<br><span class="badge">學業成績一等獎</span><br><b>全學年：</b><span class="badge badge-gold">學業成績榮譽獎</span> <span class="badge badge-gold">科學科技獎勵計劃獎學金</span> <span class="badge badge-gold">傑出藝術成就獎</span></td>
+                </tr>
+                <tr>
+                    <td rowspan="4" style="font-weight:bold; text-align:center; background:#f9f9f9;">四年級<br>(P4)</td>
+                    <td>上學期中</td>
+                    <td>中文 (96.8) | 英文 (96.4) | 數學 (96.0) | 常識 (100)</td>
+                    <td>全級第 6 名 / 全班第 3 名<br><span class="badge">學習態度獎</span> <span class="badge">學業成績一等獎</span></td>
+                </tr>
+                <tr>
+                    <td>上學期末</td>
+                    <td>中文 (90.7) | 英文 (98.8) | 數學 (95.0) | 常識 (100)</td>
+                    <td>全級第 7 名 / 全班第 3 名<br><span class="badge">學業成績一等獎</span></td>
+                </tr>
+                <tr>
+                    <td>下學期中</td>
+                    <td>中文 (91.9) | 英文 (96.0) | 數學 (97.0) | 常識 (98.0)</td>
+                    <td>全級第 10 名 / 全班第 7 名<br><span class="badge">學業成績一等獎</span></td>
+                </tr>
+                <tr>
+                    <td>下學期末</td>
+                    <td>中文 (92.1) | 英文 (95.3) | 數學 (96.0) | 常識 (97.0)</td>
+                    <td>全級第 10 名 / 全班第 5 名<br><span class="badge">學業成績一等獎</span><br><b>全學年：</b><span class="badge badge-gold">學業成績榮譽獎</span> <span class="badge badge-gold">科學科技獎勵計劃獎學金</span> <span class="badge badge-gold">傑出藝術成就獎</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="col-box" style="margin-top:2mm; background:#fffaf0; border-top:3px solid var(--accent);">
+            <h3 style="color:var(--accent); margin-bottom:2mm; font-size:11pt;">🏆 年度學術核心大獎摘要 (Annual Core Awards)</h3>
+            <ul style="margin:0; padding-left:5mm; font-size:9.5pt; line-height:1.4;">
+                <li><b>大埔舊墟公立學校 學業成績榮譽獎 (P4 & P5 雙年度)</b> — 頒發予全學年成績極為優異、表現穩定的學生。</li>
+                <li><b>大埔舊墟公立學校 科學科技獎勵計劃獎學金 (P4 & P5 雙年度)</b> — 表彰在小學科學及科技學習領域具有卓越天賦與成果的學生。</li>
+                <li><b>大埔舊墟公立學校 傑出藝術成就獎 (P4 & P5 雙年度)</b> — 表彰在視覺藝術與創意設計方面表現傑出、代表學校取得殊榮的學生。</li>
+                <li><b>大埔舊墟公立學校 薪火相傳飛躍國際獎 (P5)</b> — 表彰代表香港前往境外參加國際交流與競賽，表現出色的傑出學生。</li>
+            </ul>
+        </div>
+
+        <div class="page-footer-text">
+            <span>黃熹澄 個人學習履歷檔案</span>
+            <span>第 3 頁 / 共 10 頁</span>
+        </div>
+        <div class="footer-accent"></div>
+    </div>
+
+
+    <!-- ================= PAGE 4: STEAM FOCUS I ================= -->
+    <div class="page">
+        <div class="header-accent"></div>
+        <h2 class="section-title">創科表現（一）：機械人與國際交流 <span class="en">STEAM Focus I: Robotics</span></h2>
+        
+        <p style="font-size: 10pt; margin-bottom: 3mm;">
+            我熱愛機械人編程。作為學校<b>機械人編程校隊</b>的核心隊員，我積極參與國際性競賽，多次為學校與香港贏得國際殊榮：
+        </p>
+
+        <div class="achievement-grid" style="grid-template-columns: 1fr;">
+            <div class="achievement-card" style="border-top-color: var(--accent); background: #fdfcf7;">
+                <div>
+                    <h3 style="font-size:12pt; color:var(--primary);">🏆 2025 FIRST LEGO League (FLL) 亞洲公開賽 — 季軍 (Asia Open 3rd Place)</h3>
+                    <p style="font-size:9.5pt; margin-top:1.5mm; line-height:1.4;">
+                        我非常榮幸地代表學校與香港，前往境外參加全球極具影響力的 FLL 亞洲公開錦標賽。在激烈的競爭中，我們團隊憑藉創新的設計方案與默契的配合，榮獲<b>全場季軍 (The Third Place)</b>。此次經歷使我的編程技能、抗壓能力與國際視野得到了極大的提升。
+                    </p>
+                </div>
+                <div class="code">對照附件編號：P4_001 / P5_001</div>
+            </div>
+        </div>
+
+        <div class="achievement-grid">
+            <div class="achievement-card">
+                <div>
+                    <h3>FLL 香港錦標賽 — 團體總季軍</h3>
+                    <p>在香港區錦標賽中，我們榮獲團體總季軍 (Overall 2nd runner-up) 及 Team Model Award，順利取得國際賽代表資格。</p>
+                </div>
+                <div class="code">對照附件：P4_002 / P4_003</div>
+            </div>
+            
+            <div class="achievement-card">
+                <div>
+                    <h3>BETT London 2025 創科卓越獎</h3>
+                    <p>受邀於英國倫敦舉辦的全球最大教育科技展 (BETT 2025) 中展示 Marty 機械人編程，榮獲 Prister 頒發之創新科技卓越獎。</p>
+                </div>
+                <div class="code">對照附件：P4_010</div>
+            </div>
+
+            <div class="achievement-card">
+                <div>
+                    <h3>Robofest HK 智慧遊行 — 金獎</h3>
+                    <p>在 Robofest 國際機械人香港區錦標賽「RoboParade Junior」項目中，以優秀的感應器與機械結構編程榮獲金獎 (Gold Award)。</p>
+                </div>
+                <div class="code">對照附件：P4_012</div>
+            </div>
+
+            <div class="achievement-card">
+                <div>
+                    <h3>Robofest HK 瓶子相撲 — 金獎</h3>
+                    <p>在 Robofest 「BottleSumo Junior」相撲機械人對決中，編寫了精確的搜尋與碰撞算法，勇奪香港區金獎 (Gold Award)。</p>
+                </div>
+                <div class="code">對照附件：P4_013</div>
+            </div>
+
+            <div class="achievement-card">
+                <div>
+                    <h3>Universal Robotics 競技大賽 一等獎</h3>
+                    <p>在 URC 國際智能機械人競技大賽高小組中表現優異，榮獲一等獎，體現了高超的動態路徑規劃與調試能力。</p>
+                </div>
+                <div class="code">對照附件：P4_006</div>
+            </div>
+
+            <div class="achievement-card">
+                <div>
+                    <h3>小學聯校STEAM 6足機械人 一等獎</h3>
+                    <p>在小學聯校現場搭建與競技賽中，設計編程的6足仿生機械人表現出色，奪得一等獎殊榮。</p>
+                </div>
+                <div class="code">對照附件：P4_007</div>
+            </div>
+        </div>
+
+        <div class="page-footer-text">
+            <span>黃熹澄 個人學習履歷檔案</span>
+            <span>第 4 頁 / 共 10 頁</span>
+        </div>
+        <div class="footer-accent"></div>
+    </div>
+
+
+    <!-- ================= PAGE 5: STEAM FOCUS II ================= -->
+    <div class="page">
+        <div class="header-accent"></div>
+        <h2 class="section-title">創科表現（二）：科技資優與競賽 <span class="en">STEAM Focus II: Science & Coding</span></h2>
+        
+        <p style="font-size: 10pt; margin-bottom: 3mm;">
+            除機械人外，我在資訊科技、生物創科及電腦教育方面也展現了極高的學術潛能與資優實力：
+        </p>
+
+        <div class="achievement-grid" style="grid-template-columns: 1fr;">
+            <div class="achievement-card" style="border-top-color: var(--accent); background: #fcf8f2;">
+                <div>
+                    <h3 style="font-size:12pt; color:var(--primary);">🌟 2025 香港傑出 STEAM 學生大獎 (Outstanding STEAM Student Award)</h3>
+                    <p style="font-size:9.5pt; margin-top:1.5mm; line-height:1.4;">
+                        由香港學界生物創科教育精英大獎組委會頒發。此榮譽專門表彰在全港學校中，於科學研究、創科實踐、STEAM 技術應用上具備傑出表現與領袖潛質的極少數學生。這是我在創科領域綜合能力獲得權威認可的重要里程碑。
+                    </p>
+                </div>
+                <div class="code">對照附件編號：P5_002</div>
+            </div>
+        </div>
+
+        <div class="achievement-grid">
+            <div class="achievement-card">
+                <div>
+                    <h3>全港校際STEAM資優盃 總決賽金獎</h3>
+                    <p>在 2025-2026 學年全港資優盃資訊科技大賽中，歷經初賽、複賽，在總決賽現場編程競技中均榮獲<b>金獎</b>，並於前一年度榮獲<b>學霸第一名</b>。</p>
+                </div>
+                <div class="code">對照附件：P4_004 / P5_004 / P5_005</div>
+            </div>
+            
+            <div class="achievement-card">
+                <div>
+                    <h3>NOW TV STEM AWARDS — 銀獎</h3>
+                    <p>在全港大型 NOW TV STEM 創科設計賽中，以「智慧社區生活用品」主題方案，連續兩年榮獲小學組<b>銀獎 (Silver Award)</b>。</p>
+                </div>
+                <div class="code">對照附件：P4_017 / P5_003</div>
+            </div>
+
+            <div class="achievement-card">
+                <div>
+                    <h3>WSC Asia Pacific — 銀獎 (Silver)</h3>
+                    <p>在 WSC 亞太區青年編程挑戰賽（World Scratch Challenge）中，以極具創意的趣味教學程序設計榮獲銀獎。</p>
+                </div>
+                <div class="code">對照附件：P4_008</div>
+            </div>
+
+            <div class="achievement-card">
+                <div>
+                    <h3>皇仁書院 小小發明家比賽 優異獎</h3>
+                    <p>在傳統名校皇仁書院舉辦的第十屆小小發明家比賽中，憑藉創新的環保智能發明作品獲得優異獎。</p>
+                </div>
+                <div class="code">對照附件：P5_007</div>
+            </div>
+
+            <div class="achievement-card">
+                <div>
+                    <h3>HKCS 挑戰獎勵計劃 — 銀章級</h3>
+                    <p>榮獲香港電腦教育學會（HKALPS）頒發的資訊科技挑戰獎勵計劃銀章級認證，編程與算法基礎深厚。</p>
+                </div>
+                <div class="code">對照附件：P4_015</div>
+            </div>
+
+            <div class="achievement-card">
+                <h3>Global Marty Challenge 演講大獎</h3>
+                <p>在第二屆全球 Marty 編程挑戰賽中，以全英文發表了我們團隊的機械人設計與編程思路，榮獲<b>最佳演講大獎 (Best Presentation)</b>。</p>
+                <div class="code">對照附件：P4_011</div>
+            </div>
+        </div>
+
+        <div class="page-footer-text">
+            <span>黃熹澄 個人學習履歷檔案</span>
+            <span>第 5 頁 / 共 10 頁</span>
+        </div>
+        <div class="footer-accent"></div>
+    </div>
+
+
+    <!-- ================= PAGE 6: VISUAL ARTS ================= -->
+    <div class="page">
+        <div class="header-accent"></div>
+        <h2 class="section-title">藝術表現（一）：視覺藝術與科技設計 <span class="en">Arts & Design Achievements</span></h2>
+        
+        <p style="font-size: 10pt; margin-bottom: 3mm;">
+            我堅信科技能賦能藝術，而藝術能點亮科技。我在繪畫、手作、非遺文創以及 AI 輔助設計等項目中，多次獲得全港及國際大賽獎項：
+        </p>
+
+        <div class="achievement-grid" style="grid-template-columns: 1fr;">
+            <div class="achievement-card" style="border-top-color: var(--accent); background: #fefcf5;">
+                <div>
+                    <h3 style="font-size:12pt; color:var(--primary);">🎨 全港小學學界三項潛能 視覺藝術潛能學生獎</h3>
+                    <p style="font-size:9.5pt; margin-top:1.5mm; line-height:1.4;">
+                        由全港小學學界三項潛能傑出學生選拔（S.A.M. project 2025）頒發。這項榮譽旨在發掘並表彰在視覺藝術方面具有頂尖天賦、創造力與美學潛質的傑出小學生，代表了全港學界對我藝術造詣的高度認可。
+                    </p>
+                </div>
+                <div class="code">對照附件編號：P5_011</div>
+            </div>
+        </div>
+
+        <div class="achievement-grid">
+            <div class="achievement-card">
+                <div>
+                    <h3>創藝節 — AI 設計大師獎</h3>
+                    <p>在學校創藝節（Creative Fair 2026）中，利用 AI 輔助工具設計出兼具美感與實用性的前衛椅子，榮獲 <b>AI設計大師獎</b>。</p>
+                </div>
+                <div class="code">對照附件：P5_013</div>
+            </div>
+            
+            <div class="achievement-card">
+                <div>
+                    <h3>舊墟學校 奧斯卡工藝 & 服裝獎</h3>
+                    <p>在 2026 年創藝奧斯卡頒獎禮中，憑藉高超的手工立體裁剪與色彩搭配，榮獲<b>最佳服裝獎</b>及<b>最佳工藝設計獎</b>。</p>
+                </div>
+                <div class="code">對照附件：P5_022 / P5_023</div>
+            </div>
+
+            <div class="achievement-card">
+                <div>
+                    <h3>全港兒童繪畫創作比賽 — 金獎</h3>
+                    <p>在「童樂遊世界」全港兒童繪畫創作大賽 2025 中，以豐富色彩與童趣構圖，奪得小學組<b>金獎</b>。</p>
+                </div>
+                <div class="code">對照附件：P5_015 / P4_021</div>
+            </div>
+
+            <div class="achievement-card">
+                <div>
+                    <h3>利是封設計比賽 — 金獎 (Champion)</h3>
+                    <p>在「同心祝福」利是封設計比賽 2026 中，設計的中式利是封富含美德傳統，榮獲中童組<b>金獎</b>。</p>
+                </div>
+                <div class="code">對照附件：P5_016</div>
+            </div>
+
+            <div class="achievement-card">
+                <div>
+                    <h3>非遺旗袍設計比賽 — 入圍獎</h3>
+                    <p>在香港理工大學舉辦的第一屆非物質文化遺產旗袍設計比賽中，將現代美學與非遺刺繡結合，成功入圍決賽。</p>
+                </div>
+                <div class="code">對照附件：P4_030</div>
+            </div>
+
+            <div class="achievement-card">
+                <h3>大埔舊墟公立學校 創意設計師</h3>
+                <p>在校內「愛的創意校園」成果展及春日夢想市集中表現卓越，兩度榮獲<b>最優秀策劃大獎</b>與校級<b>創意設計師獎</b>。</p>
+                <div class="code">對照附件：P5_025 / P5_026</div>
+            </div>
+        </div>
+
+        <div class="page-footer-text">
+            <span>黃熹澄 個人學習履歷檔案</span>
+            <span>第 6 頁 / 共 10 頁</span>
+        </div>
+        <div class="footer-accent"></div>
+    </div>
+
+
+    <!-- ================= PAGE 7: MUSIC & PERFORMING ARTS ================= -->
+    <div class="page">
+        <div class="header-accent"></div>
+        <h2 class="section-title">藝術表現（二）：音樂與表演藝術 <span class="en">Music & Performing Arts</span></h2>
+        
+        <p style="font-size: 10pt; margin-bottom: 3mm;">
+            唱歌、舞台表演和朗誦是我表達自我的另一個舞台。我經常積極參加校際歌唱比賽及全港朗誦節，取得了豐碩成果：
+        </p>
+
+        <div class="achievement-grid" style="grid-template-columns: 1fr;">
+            <div class="achievement-card" style="border-top-color: var(--accent); background: #fdfcf7;">
+                <div>
+                    <h3 style="font-size:12pt; color:var(--primary);">🎤 第二十三屆全港小學英文民歌組合歌唱比賽 — 亞軍</h3>
+                    <p style="font-size:9.5pt; margin-top:1.5mm; line-height:1.4;">
+                        由香港教育局主辦，我作為小學英文合唱組合「舊墟之聲」的核心隊長及主唱，帶領團隊與全港數十所優秀小學現場比拼，最終以悅耳的和聲與精妙的舞台演繹榮獲<b>全港亞軍 (1st Runner-up)</b>。此前亦榮獲校內分組冠軍及<b>全場殿軍</b>、<b>最佳動作演繹獎</b>。
+                    </p>
+                </div>
+                <div class="code">對照附件編號：P5_028 / P4_033 / P4_034 / P4_035</div>
+            </div>
+        </div>
+
+        <div class="achievement-grid">
+            <div class="achievement-card" style="grid-column: span 2;">
+                <h3 style="font-size:11pt;">🗣️ 第 76 屆 & 第 77 屆 香港學校朗誦節優秀戰績</h3>
+                <p style="font-size:9pt; margin-top:1mm;">
+                    我連續兩年代表學校參加香港學校音樂及朗誦協會舉辦的香港學校朗誦節，在多個高難度的獨誦項目中均表現突出，獲得專家評委極高讚譽：
+                </p>
+                <ul style="margin:0; padding-left:5mm; font-size:9pt; line-height:1.4;">
+                    <li><b>第 76 屆 (2024)：</b>Solo Verse Speaking Non-Open (P4 Girls) — <b>全港亞軍 (Second Place)</b> <span class="code">[P4_045]</span></li>
+                    <li><b>第 76 屆 (2024)：</b>中文散文獨誦粵語 (四年級女子組) — <b>全港季軍 (Third Place)</b> <span class="code">[P4_046]</span></li>
+                    <li><b>第 77 屆 (2025)：</b>Solo Verse Speaking Non-Open — <b>優良 (Merit)</b> <span class="code">[P5_031]</span></li>
+                    <li><b>第 77 屆 (2025)：</b>中文散文獨誦粵語 (高小組) — <b>優良 (Merit)</b> <span class="code">[P5_032]</span></li>
+                </ul>
+            </div>
+
+            <div class="achievement-card">
+                <div>
+                    <h3>我愛香港2026 演講決賽 — 優異獎</h3>
+                    <p>在中華美德校際演講總決賽中，以「傳統美德與現代傳承」為題，生動大方的演講獲得評委好評，榮獲小學組<b>優異獎</b>。</p>
+                </div>
+                <div class="code">對照附件：P5_030</div>
+            </div>
+            
+            <div class="achievement-card">
+                <div>
+                    <h3>Once Upon a Book Storytelling 證書</h3>
+                    <p>在由教育局（EDB）舉辦的全港 Once Upon a Book Storytelling 英文說故事比賽中，獲得參賽與優異證書。</p>
+                </div>
+                <div class="code">對照附件：P5_033</div>
+            </div>
+
+            <div class="achievement-card" style="grid-column: span 2;">
+                <div>
+                    <h3>家長教師會才藝晚會 — 出色表演獎</h3>
+                    <p>在學校家長教師會舉辦的年度才藝晚會中擔任獨唱及樂隊骨幹，精湛卓越的現場表現獲得全體師生一致好評與出色嘉許獎。</p>
+                </div>
+                <div class="code">對照附件：P5_029</div>
+            </div>
+        </div>
+
+        <div class="page-footer-text">
+            <span>黃熹澄 個人學習履歷檔案</span>
+            <span>第 7 頁 / 共 10 頁</span>
+        </div>
+        <div class="footer-accent"></div>
+    </div>
+
+
+    <!-- ================= PAGE 8: SPORTS ================= -->
+    <div class="page">
+        <div class="header-accent"></div>
+        <h2 class="section-title">體育表現與身體素質 <span class="en">Sports & Physical Fitness</span></h2>
+        
+        <p style="font-size: 10pt; margin-bottom: 3mm;">
+            健康、活力、堅持與團隊精神是我的人生信條。我是學校<b>女子籃球校隊</b>的隊員，在揮灑汗水的球場上，我學會了如何面對逆境與永不言敗：
+        </p>
+
+        <div class="achievement-grid" style="grid-template-columns: 1fr;">
+            <div class="achievement-card" style="border-top-color: var(--accent); background: #fbfbfb;">
+                <div>
+                    <h3 style="font-size:12pt; color:var(--primary);">🏀 中國香港學界體育聯會 大埔區小學校際籃球比賽 — 季軍</h3>
+                    <p style="font-size:9.5pt; margin-top:1.5mm; line-height:1.4;">
+                        我非常榮幸能作為校隊核心，代表學校參加中國香港學界體育聯會（學體會）主辦的大埔區校際籃球賽。通過隊友間日夜苦練與頑強的防守，我們最終榮獲<b>全區季軍</b>，並多次應邀參加協恩中學聯合小學籃球邀請賽及林大輝中學籃球邀請賽。
+                    </p>
+                </div>
+                <div class="code">對照附件編號：P4_036 / P4_040 / P4_041</div>
+            </div>
+        </div>
+
+        <div class="achievement-grid">
+            <div class="achievement-card">
+                <div>
+                    <h3>大埔區小學籃球賽 — 亞軍</h3>
+                    <p>在由中華聖潔會靈風中學舉辦的大埔區小學女子籃球邀請賽中，全心拼搏，最終奪得<b>女子組亞軍</b>殊榮。</p>
+                </div>
+                <div class="code">對照附件：P4_037</div>
+            </div>
+            
+            <div class="achievement-card">
+                <div>
+                    <h3>大埔三育中學 禁毒盃邀請賽 — 殿軍</h3>
+                    <p>在五年級代表校隊出征大埔三育中學主辦的「禁毒盃」小學籃球邀請賽，榮獲<b>全場殿軍 (4th Place)</b>。</p>
+                </div>
+                <div class="code">對照附件：P5_034</div>
+            </div>
+
+            <div class="achievement-card" style="grid-column: span 2;">
+                <h3 style="font-size:11pt;">🏃‍♀️ 體能與活力獎勵計劃榮譽</h3>
+                <p style="font-size:9pt; margin-top:1mm;">
+                    除了團體籃球，我也十分注重個人的身體素質與耐力鍛煉，積極參與政府及學校推廣的各項運動挑戰：
+                </p>
+                <ul style="margin:0; padding-left:5mm; font-size:9pt; line-height:1.4;">
+                    <li><b>香港教育局 Sport ACT 獎勵計劃 — 金獎 (P4 & P5 雙年度)：</b>累計運動時數達到最高標準，連續兩年榮獲金獎證書認證。 <span class="code">[P4_038 / P5_035]</span></li>
+                    <li><b>「躍動校園活力人生」巴黎奧運挑戰挑戰賽 — 金章：</b>積極參與學校組織的 MVPA60 (中等至劇烈強度身體活動) 每日累積 60 分鐘挑戰，榮獲教育部頒發之最高榮譽金章。 <span class="code">[P4_039]</span></li>
+                    <li><b>學校體適能獎勵計劃 — 銅獎 (P5)：</b>在學校年度體適能指標測試（坐位體前屈、仰臥起坐、耐力跑等）中表現優良，獲得銅獎認證。 <span class="code">[P5_036]</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="page-footer-text">
+            <span>黃熹澄 個人學習履歷檔案</span>
+            <span>第 8 頁 / 共 10 頁</span>
+        </div>
+        <div class="footer-accent"></div>
+    </div>
+
+
+    <!-- ================= PAGE 9: LEADERSHIP & SERVICE ================= -->
+    <div class="page">
+        <div class="header-accent"></div>
+        <h2 class="section-title">領袖才華與社會服務 <span class="en">Leadership & Social Services</span></h2>
+        
+        <p style="font-size: 10pt; margin-bottom: 3mm;">
+            「非以役人，乃役於人。」在校內，我積極擔任各項領袖職務，培養了極強的組織、溝通和危機處理能力，並樂於走出校園、服務社會：
+        </p>
+
+        <div class="achievement-grid" style="grid-template-columns: 1fr;">
+            <div class="achievement-card" style="border-top-color: var(--accent); background: #fdfcf7;">
+                <div>
+                    <h3 style="font-size:12pt; color:var(--primary);">🎗️ 大埔舊墟公立學校 — 傑出風紀 (Outstanding Prefect)</h3>
+                    <p style="font-size:9.5pt; margin-top:1.5mm; line-height:1.4;">
+                        我自四年級起擔任學校風紀，因執勤表現極為出色、具備極強的管理才華和公正負責的態度，在五年級全校「傑出風紀選舉」中高票當選<b>「傑出風紀」</b>，並兩度獲得學校因「擔任風紀表現優異」記<b>優點一次</b>的榮譽。
+                    </p>
+                </div>
+                <div class="code">對照附件編號：P5_041 / P5_042 / P4_052</div>
+            </div>
+        </div>
+
+        <div class="achievement-grid">
+            <div class="achievement-card">
+                <div>
+                    <h3>大埔警區 — 傑出提子大使</h3>
+                    <p>受大埔警區委任為防騙宣傳「提子大使」。因積極推廣社區防騙知識、表現突出，榮獲頒發<b>傑出提子大使大獎</b>與感謝狀。</p>
+                </div>
+                <div class="code">對照附件：P5_038 / P5_039 / P4_048</div>
+            </div>
+            
+            <div class="achievement-card">
+                <div>
+                    <h3>學生議會代表 & 班長 (P4 & P5)</h3>
+                    <p>深得老師與同學信任，連續兩年當選<b>學生議會班級代表</b>與<b>班長</b>，成為師生溝通的橋樑，服務同學。</p>
+                </div>
+                <div class="code">對照附件：成績表紀載</div>
+            </div>
+
+            <div class="achievement-card">
+                <div>
+                    <h3>公益少年團 — 小學中級獎章</h3>
+                    <p>作為公益少年團的大埔區骨幹成員，熱心參與校園綠化與環保宣傳工作，榮獲教育局頒發小學中級獎章證書。</p>
+                </div>
+                <div class="code">對照附件：P4_047</div>
+            </div>
+
+            <div class="achievement-card">
+                <div>
+                    <h3>慈善義工賣旗日 — 嘉許狀</h3>
+                    <p>積極帶領並組織參與慈善機構賣旗日（如香港導盲犬協會、讓孩子挺直全港賣旗日），因募捐表現出色多次獲得嘉許狀。</p>
+                </div>
+                <div class="code">對照附件：P5_043 / P5_044 / P5_043</div>
+            </div>
+        </div>
+
+        <div class="col-box" style="margin-top:2mm; background:#fafdfc; border-left: 4px solid var(--secondary);">
+            <h3 style="color:var(--secondary); font-size:10.5pt; margin-bottom:1.5mm;">🤝 領袖服務心得 (Leadership Philosophy)</h3>
+            <p style="margin:0; font-size:9pt; line-height:1.4; text-align:justify;">
+                風紀與班長的工作讓我深刻體會到，優秀的領袖不僅僅是「管理」，更是「服務與榜樣」。在維護校園秩序、宣傳社區防騙或組織慈善義賣時，我學會了如何用親和、耐心的態度與各方溝通，激發大家的團體榮譽感，攜手創造溫暖包容的氛圍。
+            </p>
+        </div>
+
+        <div class="page-footer-text">
+            <span>黃熹澄 個人學習履歷檔案</span>
+            <span>第 9 頁 / 共 10 頁</span>
+        </div>
+        <div class="footer-accent"></div>
+    </div>
+
+
+    <!-- ================= PAGE 10: INDEX & BACK COVER ================= -->
+    <div class="page">
+        <div class="header-accent"></div>
+        <h2 class="section-title">附件證書對照索引表 <span class="en">Appendix Index & Verification</span></h2>
+        
+        <p style="font-size: 9.5pt; margin-bottom: 2.5mm;">
+            所有在上述履歷中提及的獲獎紀錄、學業證書及領袖服務證明，均已按以下代號編排並妥善收錄。
+        </p>
+
+        <div style="flex: 1; overflow-y: auto; max-height: 185mm; border: 1px solid #dee2e6; border-radius: 5px; background: #fafafa;">
+            <table style="margin:0; font-size: 8.5pt; width: 100%;">
+                <thead>
+                    <tr style="position: sticky; top: 0; background: #e9ecef;">
+                        <th style="width:15%; padding:1.5mm;">編號</th>
+                        <th style="width:65%; padding:1.5mm;">證書/獎項中文名稱</th>
+                        <th style="width:20%; padding:1.5mm;">得獎年級</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>P5_002</td><td>香港學界生物創科STEAM精英大獎 — 傑出STEAM學生大獎</td><td>五年級 (P5)</td></tr>
+                    <tr><td>P5_003</td><td>Now TV STEM Award 2025 SLIVER 銀獎</td><td>五年級 (P5)</td></tr>
+                    <tr><td>P5_004</td><td>全港校際STEAM資優盃資訊科技 總決賽 金獎</td><td>五年級 (P5)</td></tr>
+                    <tr><td>P5_005/006</td><td>全港校際STEAM資優盃資訊科技 複賽 / 初賽 金獎</td><td>五年級 (P5)</td></tr>
+                    <tr><td>P5_007</td><td>皇仁書院 第十屆小小發明家比賽 優異獎</td><td>五年級 (P5)</td></tr>
+                    <tr><td>P5_008</td><td>大埔舊墟公立學校 薪火相傳飛躍國際獎</td><td>五年級 (P5)</td></tr>
+                    <tr><td>P5_010</td><td>大埔舊墟公立學校 科學科技獎勵計劃獎學金</td><td>五年級 (P5)</td></tr>
+                    <tr><td>P5_011</td><td>全港小學學界三項潛能 視覺藝術 潛能學生獎</td><td>五年級 (P5)</td></tr>
+                    <tr><td>P5_012</td><td>創藝節 Creative Fair 2026 資訊科技體育基金 MTF 獎學金</td><td>五年級 (P5)</td></tr>
+                    <tr><td>P5_013</td><td>創藝節 Creative Fair 2026 先驅 Designer Chair AI設計大師獎</td><td>五年級 (P5)</td></tr>
+                    <tr><td>P5_014/015</td><td>創藝節 先驅XR電影獎 / 繪畫創作比賽 金獎</td><td>五年級 (P5)</td></tr>
+                    <tr><td>P5_016/017</td><td>同心祝福利是封設計中童組金獎 / 100層樓學校創意設計優勝獎</td><td>五年級 (P5)</td></tr>
+                    <tr><td>P5_020/021</td><td>大埔舊墟公立學校 傑出藝術成就獎 / 視藝創科成果展優秀作品獎</td><td>五年級 (P5)</td></tr>
+                    <tr><td>P5_022/023</td><td>奧斯卡頒獎禮 最佳服裝獎 / 最佳工藝設計獎</td><td>五年級 (P5)</td></tr>
+                    <tr><td>P5_024/025</td><td>奧斯卡 最佳音樂電影獎 / 春日夢想市集 最優秀策劃大獎</td><td>五年級 (P5)</td></tr>
+                    <tr><td>P5_028</td><td>第二十三屆全港小學英文民歌組合歌唱比賽 亞軍</td><td>五年級 (P5)</td></tr>
+                    <tr><td>P5_030</td><td>我愛香港2026 中華美德校際演講決賽 傳承獎優異獎</td><td>五年級 (P5)</td></tr>
+                    <tr><td>P5_031/032</td><td>第77屆香港學校朗誦節 Solo Verse Speaking Merit / 散文獨誦粵語優良</td><td>五年級 (P5)</td></tr>
+                    <tr><td>P5_038/041</td><td>大埔警區 傑出提子大使 / 傑出風紀獎</td><td>五年級 (P5)</td></tr>
+                    <tr><td>P5_049/050</td><td>學校閱讀獎勵計劃 金獎 / 學業成績榮譽獎</td><td>五年級 (P5)</td></tr>
+                    <tr style="border-top:2px solid #6c757d;"><td>P4_001</td><td>2025 FIRST LEGO League Asia Open Championship Third Place (季軍)</td><td>四年級 (P4)</td></tr>
+                    <tr><td>P4_002/003</td><td>FLL 香港錦標賽 團體總季軍 / Team Model Award</td><td>四年級 (P4)</td></tr>
+                    <tr><td>P4_004/005</td><td>全港校際 STEAM 資優盃資訊科技 總決賽第一名 / 初賽金獎</td><td>四年級 (P4)</td></tr>
+                    <tr><td>P4_006/007</td><td>URC 機械人競技比賽高小組一等獎 / 6足機械人一等獎</td><td>四年級 (P4)</td></tr>
+                    <tr><td>P4_010/011</td><td>London BETT 2025 創科卓越獎 / Global Marty 最佳演講大獎</td><td>四年級 (P4)</td></tr>
+                    <tr><td>P4_012/013</td><td>Robofest 智慧遊行金獎 / 瓶子相撲金獎</td><td>四年級 (P4)</td></tr>
+                    <tr><td>P4_014/015</td><td>學校科學科技獎勵計劃獎學金 / 資訊科技挑戰獎勵計劃銀章級</td><td>四年級 (P4)</td></tr>
+                    <tr><td>P4_021/022</td><td>青少年兒童當代繪畫大賽金獎 / 拔萃兒童手作Contest冠軍</td><td>四年級 (P4)</td></tr>
+                    <tr><td>P4_024/025</td><td>學校傑出藝術成就獎 / 親子環保生活用品設計高小組銀獎</td><td>四年級 (P4)</td></tr>
+                    <tr><td>P4_028/030</td><td>「愛的創意校園」成果展 AI虛擬歌手獎 / 理大非遺旗袍設計入圍獎</td><td>四年級 (P4)</td></tr>
+                    <tr><td>P4_033/034</td><td>第22屆英文民歌 舊墟之聲 分組冠軍 / 最佳動作演繹獎、優異獎、全場殿軍</td><td>四年級 (P4)</td></tr>
+                    <tr><td>P4_036/037</td><td>學體會大埔區小學校際籃球比賽 季軍 / 靈風中學籃球賽 女子組亞軍</td><td>四年級 (P4)</td></tr>
+                    <tr><td>P4_038/039</td><td>Sport ACT獎勵計劃 金獎 / 巴黎奧運挑戰賽暨MVPA60 金章</td><td>四年級 (P4)</td></tr>
+                    <tr><td>P4_045/046</td><td>第76屆朗誦節 Solo Verse Non-Open 亞軍 / 散文獨誦粵語 季軍</td><td>四年級 (P4)</td></tr>
+                    <tr><td>P4_047/050</td><td>公益少年團 小學中級獎章 / 大埔區學生獎勵計劃 表現優異</td><td>四年級 (P4)</td></tr>
+                    <tr><td>P4_051/054</td><td>學校學業成績榮譽獎 / 好孩子獎勵計劃完成本獎勵 優異四星章</td><td>四年級 (P4)</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="margin-top: 3mm; border-top: 1px solid var(--border-color); padding-top: 3mm; text-align: center;">
+            <p style="font-size: 10pt; font-weight: bold; color: var(--primary); margin-bottom: 1.5mm;">
+                「行而不輟，未來可期。」
+            </p>
+            <p style="font-size: 9pt; color: #7f8c8d; margin:0;">
+                感謝各位校長、主任及評審老師抽空審閱黃熹澄的學習履歷檔案。
+            </p>
+        </div>
+
+        <div class="page-footer-text">
+            <span>黃熹澄 個人學習履歷檔案</span>
+            <span>第 10 頁 / 共 10 頁</span>
+        </div>
+        <div class="footer-accent"></div>
+    </div>
+
+</body>
+</html>
