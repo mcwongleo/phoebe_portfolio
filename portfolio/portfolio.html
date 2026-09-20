@@ -21,6 +21,22 @@
                 box-shadow: none !important;
                 margin: 0 !important;
             }
+            /* Fix for Scroll Menu on Page 10 in print mode */
+            #index-container {
+                overflow-y: visible !important;
+                max-height: none !important;
+                flex: none !important;
+                border: none !important;
+                background: transparent !important;
+            }
+            #index-container table {
+                font-size: 7.5pt !important;
+                width: 100% !important;
+            }
+            #index-container th, #index-container td {
+                padding: 1.0mm 1.5mm !important;
+                line-height: 1.2 !important;
+            }
         }
 
         /* Screen & General Rules */
@@ -150,6 +166,17 @@
         }
         tr.highlight {
             background-color: #fdfaf2;
+        }
+
+        /* Specific style for index table on Page 10 to fit perfectly without scrollbars */
+        #index-table {
+            font-size: 7.5pt !important;
+            margin: 0;
+            width: 100%;
+        }
+        #index-table th, #index-table td {
+            padding: 1.1mm 1.5mm !important;
+            line-height: 1.2 !important;
         }
 
         /* Achievements Layout */
@@ -937,8 +964,8 @@
             所有在上述履歷中提及的獲獎紀錄、學業證書及領袖服務證明，均已按以下代號編排並妥善收錄。
         </p>
 
-        <div style="flex: 1; overflow-y: auto; max-height: 185mm; border: 1px solid #dee2e6; border-radius: 5px; background: #fafafa;">
-            <table style="margin:0; font-size: 8.5pt; width: 100%;">
+        <div id="index-container" style="flex: 1; border: 1px solid #dee2e6; border-radius: 5px; background: #fafafa;">
+            <table id="index-table">
                 <thead>
                     <tr style="position: sticky; top: 0; background: #e9ecef;">
                         <th style="width:15%; padding:1.5mm;">編號</th>
